@@ -16,7 +16,7 @@ jobs:
         working-directory: .
     steps:
       - name: Debug OIDC
-              uses: github/actions-oidc-debugger@main
+        uses: github/actions-oidc-debugger@main
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
