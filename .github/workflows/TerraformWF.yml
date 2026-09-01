@@ -38,8 +38,3 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: terraform apply -auto-approve tfplan
        
-      - name: Debug OIDC
-        run: |
-         echo "Repository: $GITHUB_REPOSITORY"
-         echo "Ref: $GITHUB_REF"
-         echo "Event: $GITHUB_EVENT_NAME"
